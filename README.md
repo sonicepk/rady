@@ -47,5 +47,9 @@ Enough with wisdom, let's continue with the rest of parameters::
     MAIL_TO: List of contacts that are to be notifies in case of an anomaly being detected
      
 
+apt-get install snmp-mibs-downloader
+and edit /etc/snmp/snmp.conf
+mibs :ALL
+mibdirs /usr/share/mibs/ietf:/usr/share/mibs/iana:/usr/share/mibs/netsnmp:
 
 
