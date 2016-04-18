@@ -50,11 +50,13 @@ Enough with wisdom, let's continue with the rest of parameters::
 ##Other Dependcies##
 apt-get install snmp-mibs-downloader
 
-Make sure to edit /etc/snmp/snmp.conf
-And add the following lines. 
-mibs :RFC1213-MIB:IF-MIB
-mibdirs /usr/share/mibs/ietf:/usr/share/mibs/iana:
+    Make sure to edit /etc/snmp/snmp.conf
+    And add the following lines. 
+    mibs :RFC1213-MIB:IF-MIB
+    mibdirs /usr/share/mibs/ietf:/usr/share/mibs/iana:
+
+You need the mibs or else you will need to add the oids for ifHCInOctets, ifHCOutOctets, ifInUcastPkts and ifOutUcastPkts
 
 ##Running##
-Configure a cron job to run every 5 minutes for the poller and checker and wait for the e-mails to come in! 
+Configure a cron job to run every 1 minute for the poller and checker and wait for the e-mails to come in! 
 
